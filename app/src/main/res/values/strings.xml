@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">provalez2</string>
+    <string name="ciao">ciao</string>
+    <string name="inserisci_i_tuoi_dati">Inserisci i tuoi dati</string>
+    <string name="nome">Nome:</string>
+    <string name="es_paolo">es: Paolo</string>
+    <string name="cognome">Cognome:</string>
+    <string name="es_bianchi">es: Bianchi</string>
+    <string name="data_di_nascita">Data di Nascita:</string>
+    <string name="es_01_01_1990">es:01/01/1990</string>
+    <string name="indirizzo">Indirizzo:</string>
+    <string name="es_via_dei_boschi_n_188">es:Via dei Boschi n. 188</string>
+    <string name="et">Età:</string>
+    <string name="_1">1</string>
+    <string name="_100">100</string>
+    <string name="inserisci">Inserisci</string>
+    <string name="indirizzo2">Indirizzo</string>
+    <string name="et2">Età</string>
+
+
+</resources>

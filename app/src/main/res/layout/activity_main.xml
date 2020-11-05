@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inserisci_i_tuoi_dati"
+        android:textSize="35sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/nomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nome"
+        android:textSize="35sp"
+        android:layout_below="@+id/title"
+         />
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/es_paolo"
+        android:layout_below="@+id/nomeText"
+       />
+    <TextView
+        android:id="@+id/cognomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cognome"
+        android:textSize="35sp"
+        android:layout_below="@+id/nome"
+        />
+    <EditText
+        android:id="@+id/cognome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/es_bianchi"
+        android:layout_below="@+id/cognomeText"
+        />
+    <TextView
+        android:id="@+id/dataNascitaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/data_di_nascita"
+        android:textSize="35sp"
+        android:layout_below="@+id/cognome"
+        />
+    <EditText
+        android:inputType="datetime"
+        android:id="@+id/dataNascita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/es_01_01_1990"
+        android:layout_below="@+id/dataNascitaText"
+        />
+    <TextView
+        android:id="@+id/indirizzoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/indirizzo"
+        android:textSize="35sp"
+        android:layout_below="@+id/dataNascita"
+        />
+    <EditText
+        android:id="@+id/indirizzo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/es_via_dei_boschi_n_188"
+        android:layout_below="@+id/indirizzoText"
+        />
+    <TextView
+        android:id="@+id/etaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/et"
+        android:textSize="35sp"
+        android:layout_below="@+id/indirizzo"
+        />
+    <TextView
+        android:id="@+id/etaShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="35sp"
+        android:paddingLeft="30sp"
+        android:layout_toRightOf="@+id/etaText"
+        android:layout_below="@+id/indirizzo"
+
+         />
+    <SeekBar
+        android:id="@+id/etaSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30sp"
+        android:layout_below="@+id/etaText"
+
+    />
+    <TextView
+        android:id="@+id/minEta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1"
+        android:textSize="35sp"
+
+        android:layout_below="@+id/etaSeek"
+
+        />
+    <TextView
+        android:id="@+id/maxEta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_100"
+        android:textSize="35sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etaSeek"
+
+        />
+    <Button
+        android:id="@+id/inserisci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inserisci"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#34baeb"
+        android:layout_below="@+id/maxEta"/>
+
+    </RelativeLayout>
+
+
+
+
