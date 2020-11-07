@@ -22,6 +22,8 @@
     <string name="pulisci_i_campi">Pulisci i campi</string>
     <string name="alert_dialog_ok">Alert dialog ok</string>
     <string name="alert_dialog_cancel">alert dialog no</string>
+    <string name="es_pippo_hotmail_com">es: pippo@hotmail.com</string>
+    <string name="email">Email:</string>
 
 
 </resources>

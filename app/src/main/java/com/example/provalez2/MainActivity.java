@@ -21,7 +21,7 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
     Persona persona;
-    EditText nome,cognome,indirizzo;
+    EditText nome,cognome,indirizzo,mail;
     TextView eta,error;
     Button inserisci,refresh;
 
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         eta=findViewById(R.id.dataNascita);
         inserisci=findViewById(R.id.inserisci);
         refresh=findViewById(R.id.refresh);
+        mail=findViewById(R.id.email);
         error=findViewById(R.id.error);
         persona= new Persona();
         persona.dataDiNascita=null;
@@ -120,6 +121,10 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
     }
+    public boolean emailCheck(String mail){
+        this.mail.setError("errata o vuota");
+        return mail.contains("@") && mail.contains(".");
+    }
     public boolean generalError(){
         int countErrori=0;
         if(!capCheck(persona.getIndirizzo())) countErrori++;
@@ -128,6 +133,8 @@ public class MainActivity extends AppCompatActivity {
         else nome.setError(null);
         if(!cognomeCheck(persona.getCognome())) countErrori++;
         else cognome.setError(null);
+        if(!emailCheck(mail.getText().toString())) countErrori++;
+        else mail.setError(null);
         if(persona.dataDiNascita==null) {
             eta.setError("Inserire data di nascita");
             countErrori++;
@@ -177,5 +184,6 @@ public class MainActivity extends AppCompatActivity {
     public void updateDataNascita(Calendar date){
         this.persona.setDataDiNascita(date);
     }
+
 
 }

@@ -85,6 +85,21 @@
         android:hint="@string/es_09097"
         android:layout_below="@+id/indirizzoText"
         />
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="35sp"
+        android:layout_below="@+id/indirizzo"
+        />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/es_pippo_hotmail_com"
+        android:layout_below="@+id/emailText"
+        />
 
     <Button
         android:id="@+id/inserisci"
@@ -96,7 +111,7 @@
         android:textSize="25sp"
         android:textColor="@color/black"
         android:backgroundTint="#34baeb"
-        android:layout_below="@+id/indirizzo"/>
+        android:layout_below="@+id/email"/>
     <Button
         android:id="@+id/refresh"
         android:layout_width="match_parent"
