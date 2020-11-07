@@ -16,6 +16,12 @@
     <string name="inserisci">Inserisci</string>
     <string name="indirizzo2">Indirizzo</string>
     <string name="et2">Età</string>
+    <string name="cap">CAP:</string>
+    <string name="es_09097">es: 09097</string>
+    <string name="errore">Si è verificato un errore</string>
+    <string name="pulisci_i_campi">Pulisci i campi</string>
+    <string name="alert_dialog_ok">Alert dialog ok</string>
+    <string name="alert_dialog_cancel">alert dialog no</string>
 
 
 </resources>

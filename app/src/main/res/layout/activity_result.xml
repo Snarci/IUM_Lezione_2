@@ -59,40 +59,23 @@
         android:textSize="30sp"
         android:layout_below="@+id/cognomeText"
         />
-    <TextView
-        android:id="@+id/dataNascitaText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/data_di_nascita"
-        android:textSize="35sp"
-        android:layout_below="@+id/cognome"
-        />
-    <TextView
-        android:id="@+id/dataNascita"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="30sp"
-        android:layout_below="@+id/dataNascitaText"
-        />
+
     <TextView
         android:id="@+id/indirizzoText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/indirizzo2"
+        android:text="@string/cap"
         android:textSize="35sp"
-        android:layout_below="@+id/dataNascita"
+        android:layout_below="@+id/cognome"
         />
-    <TextView
-        android:id="@+id/indirizzo"
+    <TextView android:id="@+id/indirizzo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="30sp"
         android:layout_below="@+id/indirizzoText"
         />
-    <TextView
-        android:id="@+id/etaText"
+    <TextView android:id="@+id/etaText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/et2"
@@ -114,6 +97,18 @@
         android:layout_below="@+id/eta"
         android:backgroundTint="#abcdef"
         android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="#fedcba"
+        android:textSize="27sp"
+
+        />
+    <Button
+        android:id="@+id/confirmaButt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:backgroundTint="#abcdef"
+        android:text="Conferma"
         android:textAllCaps="false"
         android:textColor="#fedcba"
         android:textSize="27sp"

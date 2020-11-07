@@ -9,21 +9,21 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 
 public class Result extends AppCompatActivity {
     Persona persona;
-    TextView nomeT,cognomeT,dataT,indirizzoT,etaT;
-
+    TextView nomeT,cognomeT,indirizzoT,etaT;
+    Button confirm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         nomeT=findViewById(R.id.nome);
         cognomeT=findViewById(R.id.cognome);
-        dataT=findViewById(R.id.dataNascita);
         indirizzoT=findViewById(R.id.indirizzo);
         etaT=findViewById(R.id.eta);
-
+        confirm=findViewById(R.id.confirmaButt);
         Intent intent = getIntent();
         Serializable object = intent.getSerializableExtra(MainActivity.path);
 
@@ -34,10 +34,16 @@ public class Result extends AppCompatActivity {
         }
         nomeT.setText(persona.getNome());
         cognomeT.setText(persona.getCognome());
-        dataT.setText(persona.getData());
         indirizzoT.setText(persona.getIndirizzo());
-        etaT.setText(persona.getEta());
+        SimpleDateFormat format=new SimpleDateFormat("dd/MM/YYYY");
+        etaT.setText(format.format(persona.getDataDiNascita().getTime()));
 
+        confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         Button back;
         back=findViewById(R.id.back);
